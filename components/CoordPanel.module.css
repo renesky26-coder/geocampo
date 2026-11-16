@@ -1,0 +1,163 @@
+.panel {
+  background: var(--sidebar);
+  color: var(--sidebar-foreground);
+  padding: var(--spacing-2) var(--spacing-4) var(--spacing-2);
+  padding-top: max(var(--spacing-2), env(safe-area-inset-top));
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  border-bottom: 1px solid color-mix(in srgb, var(--sidebar-foreground) 12%, transparent);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-3);
+  min-width: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 420px) {
+  .brand {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.brandName {
+  font-family: var(--font-family-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.net {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-family-monospace);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.netOn {
+  color: #9fd0a6;
+}
+
+.netOff {
+  color: #f3c34a;
+}
+
+.toggle {
+  flex-shrink: 0;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  flex-shrink: 0;
+}
+
+.sunBtn {
+  width: 40px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  border: 1px solid color-mix(in srgb, var(--sidebar-foreground) 30%, transparent);
+  background: transparent;
+  color: var(--sidebar-foreground);
+  cursor: pointer;
+}
+
+.sunOn {
+  background: #f3c34a;
+  border-color: #f3c34a;
+  color: #1a1200;
+}
+
+.coords {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-3);
+  min-height: 52px;
+}
+
+.values {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-monospace);
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(1.05rem, 4.6vw, 1.45rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-family: var(--font-family-monospace);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+}
+
+.acc {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+}
+
+.accGood {
+  background: #3f6b47;
+  color: #eaf5ea;
+}
+
+.accMid {
+  background: #b07a12;
+  color: #1c1405;
+}
+
+.accBad {
+  background: #a3261c;
+  color: #fff;
+}
+
+.accNone {
+  background: #444;
+  color: #ddd;
+}
+
+.z {
+  opacity: 0.85;
+}
+
+.waiting {
+  font-family: var(--font-family-monospace);
+  font-size: 0.9rem;
+  color: #f3c34a;
+}
+
+.meta {
+  font-family: var(--font-family-monospace);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}

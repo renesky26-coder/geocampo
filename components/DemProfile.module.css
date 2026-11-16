@@ -1,0 +1,33 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2) var(--spacing-4);
+  font-size: 0.78rem;
+  color: var(--muted-foreground);
+}
+
+.stats b {
+  font-family: var(--font-family-monospace);
+  font-variant-numeric: tabular-nums;
+  color: var(--foreground);
+  font-size: 0.95rem;
+}
+
+.chart {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--spacing-2);
+}
+
+.note {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}

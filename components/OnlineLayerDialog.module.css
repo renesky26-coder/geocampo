@@ -1,0 +1,60 @@
+.dialog {
+  width: min(94vw, 520px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  max-height: 92vh;
+  overflow-y: auto;
+}
+
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.label {
+  font-family: var(--font-family-monospace);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 600;
+  margin-right: var(--spacing-1);
+}
+
+.preset {
+  min-height: 38px;
+  padding: 0 var(--spacing-3);
+  border-radius: var(--radius-full);
+  border: 1px dashed var(--primary);
+  background: var(--accent);
+  color: var(--accent-foreground);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.toggle {
+  align-self: flex-start;
+}
+
+.f {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.78rem;
+  color: var(--muted-foreground);
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}
+
+.footer {
+  flex-direction: row;
+  justify-content: flex-end;
+}

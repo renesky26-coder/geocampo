@@ -1,0 +1,78 @@
+.dialog {
+  width: min(94vw, 460px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.bar {
+  height: 10px;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--primary);
+  transition: width 400ms linear;
+}
+
+.fillReady {
+  background: var(--success);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-2);
+}
+
+.grid div {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-2) var(--spacing-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+.grid b {
+  font-family: var(--font-family-monospace);
+  font-variant-numeric: tabular-nums;
+  font-size: 1.35rem;
+}
+
+.grid span {
+  font-size: 0.72rem;
+  color: var(--muted-foreground);
+}
+
+.bad {
+  color: var(--error);
+}
+
+.live {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-family-monospace);
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+  flex-wrap: wrap;
+}
+
+.warn {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--warning);
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.grow {
+  flex: 1;
+}

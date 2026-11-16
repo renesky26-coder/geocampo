@@ -1,0 +1,16 @@
+{
+  "name": "GeoCampo",
+  "short_name": "GeoCampo",
+  "description": "Coleta de dados ambientais em campo — SIG de bolso offline",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1a2720",
+  "theme_color": "#1a2720",
+  "icons": [
+    { "src": "/_cdn/static/4c29c6cc-5966-4205-8b8a-493c1a75a9ab.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any" },
+    { "src": "/_cdn/static/4c29c6cc-5966-4205-8b8a-493c1a75a9ab.png", "sizes": "1024x1024", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Overlay layers */
+  --z-overlay: 1200; /* dialogs/sheets must sit above the map controls (500–700) */
+
+  --z-spotlight: 1000; /* Tutorial spotlights/guided help */
+
+  /* System layers */
+  --z-critical: 2000; /* Critical system notifications */
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+}
+
+:root {
+  --background: #f4f1e8;
+  --foreground: #141c17;
+  --surface: #e8e3d5;
+  --surface-foreground: #141c17;
+  --sidebar: #1a2720;
+  --sidebar-foreground: #f2ede0;
+  --card: #fdfbf6;
+  --card-foreground: #141c17;
+  --popup: #fefdf9;
+  --popup-foreground: #141c17;
+  --primary: #a63d17;
+  --primary-foreground: #ffffff;
+  --secondary: #ddd6c3;
+  --secondary-foreground: #141c17;
+  --accent: #f0e1cf;
+  --accent-foreground: #5c220c;
+  --muted: #e6e0d0;
+  --muted-foreground: #3d463f;
+  --success: #2f5e3a;
+  --success-foreground: #f2f7ef;
+  --error: #9a1f15;
+  --error-foreground: #fff5f2;
+  --warning: #8f5f00;
+  --warning-foreground: #ffffff;
+  --info: #24546a;
+  --info-foreground: #f0f7fa;
+  --info-hover: #1d4657;
+  --info-active: #163846;
+  --border: #b9b09a;
+  --grid-line: rgba(20, 28, 23, 0.07);
+  --gps-signal: #e0561f;
+
+  --font-family-base: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-family-display: 'Newsreader', Georgia, serif;
+  --font-family-monospace: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-family-cursive: 'Newsreader', Georgia, serif;
+
+  --shadow: 0 1px 2px rgba(28, 42, 34, 0.08);
+  --shadow-md: 0 4px 12px rgba(28, 42, 34, 0.12);
+  --shadow-lg: 0 12px 32px rgba(28, 42, 34, 0.18);
+  --shadow-focus: 0 0 0 3px rgba(184, 74, 36, 0.35);
+
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  --animation-duration-fast: 120ms;
+  --animation-duration-normal: 200ms;
+  --animation-duration-slow: 350ms;
+
+  --chart-color-1: #b84a24;
+  --chart-color-2: #3f6b47;
+  --chart-color-3: #2e5e73;
+  --chart-color-4: #b07a12;
+  --chart-color-5: #6b5a8e;
+}
+
+.dark {
+  --background: #121812;
+  --foreground: #e8e4d6;
+  --surface: #1a221b;
+  --surface-foreground: #e8e4d6;
+  --sidebar: #0d120e;
+  --sidebar-foreground: #e8e4d6;
+  --card: #1d261f;
+  --card-foreground: #e8e4d6;
+  --popup: #212b23;
+  --popup-foreground: #e8e4d6;
+  --primary: #e0683a;
+  --primary-foreground: #1a0c05;
+  --secondary: #2a352c;
+  --secondary-foreground: #e8e4d6;
+  --accent: #3a2a20;
+  --accent-foreground: #f1b593;
+  --muted: #242e26;
+  --muted-foreground: #a7ad9f;
+  --success: #6fa678;
+  --success-foreground: #0d1a10;
+  --error: #e2675b;
+  --error-foreground: #1f0806;
+  --warning: #dba640;
+  --warning-foreground: #1c1405;
+  --info: #6aa8c2;
+  --info-foreground: #071419;
+  --info-hover: #5a98b2;
+  --info-active: #4a88a2;
+  --border: #34403a;
+  --grid-line: rgba(232, 228, 214, 0.05);
+  --gps-signal: #ff7a3d;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.55);
+  --shadow-focus: 0 0 0 3px rgba(224, 104, 58, 0.45);
+}
+
+/* "Sol forte": maximum contrast for direct sunlight. */
+:root.sun,
+.sun {
+  --background: #fffdf7;
+  --foreground: #000000;
+  --surface: #f1ece0;
+  --surface-foreground: #000000;
+  --sidebar: #0b120d;
+  --sidebar-foreground: #ffffff;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --popup: #ffffff;
+  --popup-foreground: #000000;
+  --primary: #962f0b;
+  --primary-foreground: #ffffff;
+  --secondary: #e2dccb;
+  --secondary-foreground: #000000;
+  --accent: #f6e2cc;
+  --accent-foreground: #4a1806;
+  --muted: #ece6d6;
+  --muted-foreground: #222a24;
+  --success: #1f4d2a;
+  --warning: #7a4f00;
+  --error: #8a150c;
+  --border: #5f594b;
+  --grid-line: rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.sun button,
+.sun input,
+.sun textarea {
+  border-width: 2px;
+}
+
+.sun body {
+  font-weight: 500;
+}

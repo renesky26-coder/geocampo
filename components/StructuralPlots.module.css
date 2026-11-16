@@ -1,0 +1,83 @@
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-3);
+  padding: var(--spacing-3);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-top: var(--spacing-4);
+}
+
+.plot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  color: var(--muted-foreground);
+  text-align: center;
+}
+
+.plot svg {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+}
+
+.frame {
+  fill: none;
+  stroke: var(--foreground);
+  stroke-width: 1.2;
+}
+
+.axis {
+  stroke: var(--border);
+  stroke-width: 0.8;
+  stroke-dasharray: 3 3;
+}
+
+.n {
+  font-family: var(--font-family-monospace);
+  font-size: 11px;
+  font-weight: 700;
+  text-anchor: middle;
+  fill: var(--foreground);
+}
+
+.petal {
+  fill: var(--primary);
+  fill-opacity: 0.75;
+  stroke: var(--card);
+  stroke-width: 0.8;
+}
+
+.pole {
+  fill: var(--info);
+  stroke: var(--card);
+  stroke-width: 0.8;
+}
+
+.mean {
+  stroke: var(--primary);
+  stroke-width: 2.5;
+}
+
+.summary {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+  text-align: center;
+}
+
+.summary b {
+  font-family: var(--font-family-monospace);
+  color: var(--foreground);
+}
+
+@media (max-width: 420px) {
+  .wrap {
+    grid-template-columns: 1fr;
+  }
+}

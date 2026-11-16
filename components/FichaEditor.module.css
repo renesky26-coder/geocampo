@@ -1,0 +1,135 @@
+.sheet {
+  max-width: 600px;
+  padding: 0;
+}
+
+.body {
+  padding: var(--spacing-3) var(--spacing-6) var(--spacing-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.newRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+}
+
+.baseSelect {
+  flex: 1;
+  min-width: 220px;
+  min-height: 48px;
+  gap: var(--spacing-2);
+}
+
+.empty {
+  padding: var(--spacing-6);
+  text-align: center;
+  color: var(--muted-foreground);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-3);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.itemBody {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.itemBody span {
+  font-family: var(--font-family-monospace);
+  font-size: 0.72rem;
+  color: var(--muted-foreground);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  padding-bottom: var(--spacing-3);
+  border-bottom: 1px solid var(--border);
+}
+
+.row {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.f {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.78rem;
+  color: var(--muted-foreground);
+}
+
+.fieldCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  padding: var(--spacing-3);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius-md);
+}
+
+.fieldHead {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+}
+
+.num {
+  font-family: var(--font-family-monospace);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  width: 22px;
+}
+
+.grow {
+  flex: 1;
+}
+
+.reqRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-2);
+  position: sticky;
+  bottom: 0;
+  padding: var(--spacing-3) 0;
+  background: var(--background);
+  border-top: 1px solid var(--border);
+}

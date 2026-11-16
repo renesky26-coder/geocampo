@@ -1,0 +1,205 @@
+.dialog {
+  width: min(96vw, 820px);
+  max-width: 96vw;
+  max-height: 94vh;
+  overflow-y: auto;
+}
+
+.cameraWrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.viewfinder {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  max-height: 60vh;
+  background: #000;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+@media (orientation: landscape) {
+  .viewfinder {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.camMsg {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: var(--spacing-6);
+  text-align: center;
+  color: #f3efe4;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.live {
+  position: absolute;
+  top: var(--spacing-2);
+  left: var(--spacing-2);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-family: var(--font-family-monospace);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+}
+
+.shutterRow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.alt {
+  justify-self: start;
+  font-size: 0.82rem;
+}
+
+.altCol {
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.shutterRow > :last-child {
+  justify-self: end;
+}
+
+.shutter {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 5px solid var(--card);
+  outline: 3px solid var(--primary);
+  background: var(--primary);
+  color: var(--primary-foreground);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+}
+
+.shutter:disabled {
+  opacity: 0.4;
+}
+
+.shutter:active {
+  transform: scale(0.94);
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+  text-align: center;
+  margin: 0;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--spacing-2);
+}
+
+.colors,
+.tools {
+  display: flex;
+  gap: var(--spacing-2);
+  align-items: center;
+}
+
+.swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--border);
+  cursor: pointer;
+}
+
+.swatchOn {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.croquiHint {
+  font-family: var(--font-family-monospace);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+.canvas {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  background: #000;
+}
+
+.fields {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+.field,
+.fieldSmall {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+}
+
+.field {
+  flex: 1;
+}
+
+.fieldSmall {
+  width: 110px;
+}
+
+.meta {
+  font-family: var(--font-family-monospace);
+  font-size: 0.78rem;
+  color: var(--muted-foreground);
+  font-variant-numeric: tabular-nums;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-2);
+}
